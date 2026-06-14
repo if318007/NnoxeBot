@@ -1,6 +1,21 @@
 require('dotenv').config({ path: '.env.local' });
 const { Client, GatewayIntentBits, Events } = require('discord.js');
 const { createClient } = require('@supabase/supabase-js');
+const http = require('http');
+
+// ==========================================
+// SERVER MINI UNTUK RENDER.COM (KEEPALIVE)
+// ==========================================
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Bot Discord NNOXE Menyala 24/7!\n');
+});
+
+const PORT = process.env.PORT || 3001;
+server.listen(PORT, () => {
+  console.log(`🌍 Server mini berjalan di port ${PORT} untuk menjaga bot tetap hidup!`);
+});
+// ==========================================
 
 // Konfigurasi Supabase
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
