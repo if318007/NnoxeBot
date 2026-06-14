@@ -1,0 +1,4 @@
+{
+  "install": "npm install discord.js @supabase/supabase-js dotenv",
+  "start": "node discord-bot.js"
+}
