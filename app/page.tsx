@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, ShieldAlert, BarChart3, Clock, Zap, Target, Shield, MessageSquareQuote } from "lucide-react";
+import { ArrowRight, CheckCircle2, ShieldAlert, BarChart3, Clock, Zap, Target, Shield, MessageSquareQuote, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import Link from "next/link";
@@ -185,6 +185,13 @@ export default function Home() {
                     <p className="text-sm text-slate-600">{ft.desc}</p>
                   </div>
                 ))}
+              </div>
+              
+              <div className="mt-10">
+                <a href="https://screener.orionterminal.com/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-2xl font-bold text-lg shadow-[0_0_20px_rgba(79,70,229,0.3)] hover:shadow-[0_0_30px_rgba(79,70,229,0.5)] transition-all hover:-translate-y-1 group">
+                  Buka Orion Screener
+                  <ExternalLink className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                </a>
               </div>
             </div>
           </motion.div>

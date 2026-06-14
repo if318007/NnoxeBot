@@ -26,7 +26,7 @@ export default function RootLayout({
               <nav className="hidden md:flex gap-8 text-sm font-semibold tracking-wide uppercase">
                 <a href="/" className="text-slate-600 hover:text-blue-600 transition-colors">Beranda</a>
                 <a href="/dashboard" className="text-slate-600 hover:text-blue-600 transition-colors">Dashboard</a>
-                <a href="/#orion" className="text-slate-600 hover:text-indigo-600 transition-colors">Terminal</a>
+                <a href="https://screener.orionterminal.com/" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-indigo-600 transition-colors">Terminal</a>
                 <a href="/testimonials" className="text-slate-600 hover:text-blue-500 transition-colors">Testimoni</a>
               </nav>
               <a href="#join" className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-bold transition-all shadow-[0_4px_14px_0_rgb(0,82,255,0.39)] hover:shadow-[0_6px_20px_rgba(0,82,255,0.23)] hover:-translate-y-0.5">
